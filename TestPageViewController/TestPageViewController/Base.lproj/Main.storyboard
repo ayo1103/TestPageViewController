@@ -1,25 +1,118 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aqn-KF-Bbb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--料理老師-->
+        <scene sceneID="aND-de-PEI">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x1u-5Y-Afq" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="b6o-XL-Mym"/>
+                        <viewControllerLayoutGuide type="bottom" id="CrT-0j-6e7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="aPR-AL-pSq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hea-Zs-1GK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <connections>
+                                    <segue destination="JOp-Yy-ykR" kind="embed" id="YUd-wb-dcq"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hea-Zs-1GK" firstAttribute="leading" secondItem="aPR-AL-pSq" secondAttribute="leading" id="FJA-Yy-WwT"/>
+                            <constraint firstItem="CrT-0j-6e7" firstAttribute="top" secondItem="Hea-Zs-1GK" secondAttribute="bottom" id="M5z-OC-w4i"/>
+                            <constraint firstItem="Hea-Zs-1GK" firstAttribute="top" secondItem="aPR-AL-pSq" secondAttribute="top" id="a4W-QI-gdE"/>
+                            <constraint firstAttribute="trailing" secondItem="Hea-Zs-1GK" secondAttribute="trailing" id="pAE-mZ-ct4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="料理老師" id="pRi-vd-uot"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NG0-w8-p5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="447"/>
+        </scene>
+        <!--Teacher Page View Controller-->
+        <scene sceneID="ytN-nV-KHn">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="JOp-Yy-ykR" customClass="TeacherPageViewController" customModule="TestPageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5k-gI-RAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="446.5"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="dEL-2W-YVo">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="29Y-X7-heT" customClass="ContentViewController" customModule="TestPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nWg-mF-yz6"/>
+                        <viewControllerLayoutGuide type="bottom" id="nq8-yb-05v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ud-JK-HBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kE2-Vb-ufP">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.47711658099999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kE2-Vb-ufP" secondAttribute="trailing" id="91Z-LG-bq9"/>
+                            <constraint firstItem="nq8-yb-05v" firstAttribute="top" secondItem="kE2-Vb-ufP" secondAttribute="bottom" id="Bkj-dz-wEa"/>
+                            <constraint firstItem="kE2-Vb-ufP" firstAttribute="leading" secondItem="1ud-JK-HBQ" secondAttribute="leadingMargin" id="Tyj-ig-Mcq"/>
+                            <constraint firstItem="kE2-Vb-ufP" firstAttribute="top" secondItem="1ud-JK-HBQ" secondAttribute="topMargin" id="kaZ-Co-Wu3"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOz-Z7-oMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2093" y="471"/>
+        </scene>
+        <!--節目介紹-->
+        <scene sceneID="iFy-CR-dNI">
+            <objects>
+                <viewController id="yte-SR-b6y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JR1-9O-l3g"/>
+                        <viewControllerLayoutGuide type="bottom" id="iPu-Z2-Erw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F8g-5O-dhj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="節目介紹" id="Kh6-dL-Rh7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVW-3S-osw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="-215"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mmN-Km-oRd">
+            <objects>
+                <tabBarController id="aqn-KF-Bbb" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="iWd-LW-xdc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yte-SR-b6y" kind="relationship" relationship="viewControllers" id="90O-FN-rmk"/>
+                        <segue destination="x1u-5Y-Afq" kind="relationship" relationship="viewControllers" id="8tV-MP-wqg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYP-Bl-lbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="116"/>
         </scene>
     </scenes>
 </document>

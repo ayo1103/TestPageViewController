@@ -13,6 +13,8 @@
 		3B64ACFC1B36E79A00F7940C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B64ACFB1B36E79A00F7940C /* Images.xcassets */; };
 		3B64ACFF1B36E79A00F7940C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B64ACFD1B36E79A00F7940C /* LaunchScreen.xib */; };
 		3B64AD0B1B36E79B00F7940C /* TestPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64AD0A1B36E79B00F7940C /* TestPageViewControllerTests.swift */; };
+		3B64AD471B36FA7800F7940C /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64AD461B36FA7800F7940C /* ContentViewController.swift */; };
+		3B64AD4B1B36FC1000F7940C /* TeacherPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64AD4A1B36FC1000F7940C /* TeacherPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3B64AD041B36E79B00F7940C /* TestPageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B64AD091B36E79B00F7940C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B64AD0A1B36E79B00F7940C /* TestPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPageViewControllerTests.swift; sourceTree = "<group>"; };
+		3B64AD461B36FA7800F7940C /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		3B64AD4A1B36FC1000F7940C /* TeacherPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				3B64ACF81B36E79A00F7940C /* Main.storyboard */,
 				3B64ACFB1B36E79A00F7940C /* Images.xcassets */,
 				3B64ACFD1B36E79A00F7940C /* LaunchScreen.xib */,
+				3B64AD4A1B36FC1000F7940C /* TeacherPageViewController.swift */,
+				3B64AD461B36FA7800F7940C /* ContentViewController.swift */,
 				3B64ACF21B36E79A00F7940C /* Supporting Files */,
 			);
 			path = TestPageViewController;
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B64ACF71B36E79A00F7940C /* ViewController.swift in Sources */,
+				3B64AD4B1B36FC1000F7940C /* TeacherPageViewController.swift in Sources */,
+				3B64AD471B36FA7800F7940C /* ContentViewController.swift in Sources */,
 				3B64ACF51B36E79A00F7940C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
